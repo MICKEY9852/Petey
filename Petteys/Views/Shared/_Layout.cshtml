@@ -4,8 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Webkuy</title>
+    @*@Styles.Render("~/Content/Index.css")*@
     @Styles.Render("~/Content/mintyb.css")
     @Scripts.Render("~/bundles/modernizr")
+
 </head>
 <body style="background-color:white;">
     <div class="container">
@@ -18,7 +20,7 @@
 
 
             <a class="navbar-brand" href="#"><img src=@Url.Content("~/Content/images/logo23.png") width="45" height="45" align="absmiddle" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" >
                 <span class="navbar-toggler-icon"></span>
             </button>
             &nbsp;&nbsp;
@@ -26,42 +28,41 @@
                 <ul class="navbar-nav mr-auto">
                     <form class="form-inline my-5 my-lg-0">
                         <input maxlength="200" size="43" class="form-control mr-sm-0" type="search" placeholder="Search">
-                        </from>
+                    </from>
                         &nbsp;
-                        <div class="btn-group" role="group">
-                            <button id="btnGroupDrop4" type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown">
+                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 catagory
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop4">
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="#">สัตว์เลี้ยง</a>
                                 <a class="dropdown-item" href="#">อุปกรณ์-สัตว์เลี้ยง</a>
                                 <a class="dropdown-item" href="#">เทรนเนอร์</a>
                             </div>
                         </div>
-
                         &nbsp;
-                        <form class="form-inline my-5 my-lg-0">
-                            <button class="btn btn-light my-5 my-sm-0" type="submit">
-                                <img src=@Url.Content("~/Content/images/icons8-search-64.png") width="20" height="20" align="absmiddle" />
-                            </button>
-                        </form>
-                        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-                        &nbsp;&nbsp; &nbsp;&nbsp;
-          
-                        <form class="form-inline my-5 my-lg-0">
-                            <button class="btn btn-dark my-5 my-sm-0" type="submit">
-                                เข้าสู่ระบบ
-                            </button>
-                            &nbsp;&nbsp;
-                            <button class="btn btn-dark my-5 my-sm-0" type="submit">
-                                สมัครสมาชิก
-                            </button>
-                        </form>
-                </ul>
+
+                                <form class="form-inline my-5 my-lg-0">
+                                    <button class="btn btn-light my-5 my-sm-0" type="submit">
+                                        <img src=@Url.Content("~/Content/images/icons8-search-64.png") width="20" height="20" align="absmiddle" />
+                                    </button>
+                                </form>
+                                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                                &nbsp;&nbsp; &nbsp;&nbsp;
+
+                                <form class="form-inline my-5 my-lg-0">
+                                    <button class="btn btn-dark my-5 my-sm-0" type="submit">
+                                        เข้าสู่ระบบ
+                                    </button>
+                                    &nbsp;&nbsp;
+                                    <button class="btn btn-dark my-5 my-sm-0" type="submit">
+                                        สมัครสมาชิก
+                                    </button>
+                                </form>
+</ul>
             </div>
         </nav>
         <div class="container body-content">
